@@ -1,8 +1,8 @@
-#image-search-abstraction-layer
-Image Search Abstraction Layer
+#file metadata microservice
+File Metadata Microservice
 
-User Story: I can get the image URLs, alt text and page urls for a set of images relating to a given search string.
+User Story: I can submit a FormData object that includes a file upload.
 
-User Story: I can paginate through the responses by adding a ?offset=2 parameter to the URL.
+User Story: When I submit something, I will receive the file size in bytes within the JSON response
 
-User Story: I can get a list of the most recently submitted search strings.
+Hint: You may want to use this package: https://www.npmjs.com/package/multer

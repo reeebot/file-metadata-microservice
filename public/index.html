@@ -1,26 +1,20 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Image Search Abstraction Layer</title>
+        <title>File Metadata Microservice</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     </head>
     <body>
         <div class="container">
             <h1 class="header">
-                API Basejump: Image Search Abstraction Layer
+                API Basejump: File Metadata Microservice
             </h1>
             <blockquote>
                 User stories:
-                <ul>1) I can get the image URLs, alt text and page urls for a set of images relating to a given search string.</ul>
-                <ul>2) I can paginate through the responses by adding a ?offset=2 parameter to the URL.</ul>
-                <ul>3) I can get a list of the most recently submitted search strings.</ul>
+                <ul>1) I can submit a FormData object that includes a file upload.</ul>
+                <ul>2) When I submit something, I will receive the file size in bytes within the JSON response.</ul>
+                <ul>3) Hint: You may want to use this package: https://www.npmjs.com/package/multer</ul>
             </blockquote>
-            <h3>Example search:</h3>
-            <code>https://rebot-fcc-fourth.herokuapp.com/imgsearch/search_query</code>
-            <h5>Next page</h5>
-            <code>https://rebot-fcc-fourth.herokuapp.com/imgsearch/search_query?offset=2</code>
-            <h3>Most recent search strings:</h3>
-            <code>https://rebot-fcc-fourth.herokuapp.com/latestimgsearch/</code>
         </div>
     </body>
 </html>
