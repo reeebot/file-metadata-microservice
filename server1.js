@@ -1,21 +1,22 @@
 var express = require('express')
 var multer  = require('multer')
-var upload = multer({ dest: 'uploads/' })
+var path = require('path')
 var port = process.env.PORT || 8080;
 var app = express()
 
 
 ////// serve static index.html
 app.route('/').get(function (req, res) {
-	res.sendFile(process.cwd()+'/public/upload.html');
+	res.sendFile(process.cwd()+'/public/upload2.html');
 });
 
+////// listen for form post request and save the uploaded files
 app.post('/', multer({ dest: './uploads/'}).single('upl'), function(req,res){
-	console.log(req.body); //form fields
+	console.log("body:"+req.body); //form fields
 	/* example output:
 	{ title: 'abc' }
 	 */
-	console.log(req.file); //form files
+	console.log("file:"+req.file); //form files
 	/* example output:
             { fieldname: 'upl',
               originalname: 'grumpy.png',
