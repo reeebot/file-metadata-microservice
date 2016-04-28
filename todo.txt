@@ -1,0 +1,3 @@
+fix:  clientside: after upload, alert displays file size from json response
+
+fix:  serverside: filename & json response

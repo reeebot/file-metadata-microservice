@@ -11,7 +11,7 @@ app.route('/').get(function (req, res) {
 });
 
 ////// listen for form post request and save the uploaded files
-app.post('/', multer({ dest: './uploads/'}).single('upl'), function(req,res){
+app.post('/', multer({ dest: './uploads/'}).single('thefile'), function(req,res){
 	console.log(req.file); //form files
 	/* example output:
             { fieldname: 'upl',
