@@ -1,0 +1,43 @@
+{
+  "name": "filed-metadata-microservice",
+  "version": "1.0.0",
+  "description": "File Metadata Microservice",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.13.4",
+    "mongodb": "^2.1.16",
+    "multer": "^1.1.0",
+    "request": "^2.72.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reeebot/file-metadata-microservice.git"
+  },
+  "keywords": [
+    "file",
+    "metadata",
+    "microservice",
+    "fcc",
+    "rebot",
+    "freecodecamp",
+    "express",
+    "fileupload",
+    "upload",
+    "expressjs",
+    "nodejs",
+    "node",
+    "javascript",
+    "jquery"
+  ],
+  "author": "Tim Meijome",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reeebot/file-metadata-microservice/issues"
+  },
+  "homepage": "https://github.com/reeebot/file-metadata-microservice#readme"
+}
